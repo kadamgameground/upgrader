@@ -161,7 +161,7 @@ class Upgrader {
     this.debugDisplayAlways = false,
     this.debugDisplayOnce = false,
     this.debugLogging = false,
-    this.durationUntilAlertAgain = const Duration(minutes: 5),
+    this.durationUntilAlertAgain = Duration(minutes: 5),
     this.onIgnore,
     this.onLater,
     this.onUpdate,
