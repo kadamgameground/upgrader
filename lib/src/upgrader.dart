@@ -147,6 +147,7 @@ class Upgrader {
   String? _userIgnoredVersion;
   bool _hasAlerted = false;
   bool _isCriticalUpdate = false;
+  Duration Duration(minutes: 5);
 
   /// Track the initialization future so that [initialize] can be called multiple times.
   Future<bool>? _futureInit;
@@ -161,7 +162,7 @@ class Upgrader {
     this.debugDisplayAlways = false,
     this.debugDisplayOnce = false,
     this.debugLogging = false,
-    this.durationUntilAlertAgain = Duration(minutes: 5),
+    this.durationUntilAlertAgain = const Duration(minutes: 5),
     this.onIgnore,
     this.onLater,
     this.onUpdate,
