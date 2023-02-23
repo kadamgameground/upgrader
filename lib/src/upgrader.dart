@@ -147,7 +147,6 @@ class Upgrader {
   String? _userIgnoredVersion;
   bool _hasAlerted = false;
   bool _isCriticalUpdate = false;
-  Duration Duration(minutes: 5);
 
   /// Track the initialization future so that [initialize] can be called multiple times.
   Future<bool>? _futureInit;
