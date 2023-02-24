@@ -690,7 +690,7 @@ class Upgrader {
     }
     return CupertinoAlertDialog(
       title: Text(title),
-      content: Row(
+      content: Column(
         // mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
